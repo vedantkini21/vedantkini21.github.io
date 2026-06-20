@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vedant Kini — aerospace engineering researcher working on spacecraft guidance and control, safety-critical autonomy, and robotics."
+    />
+    <meta name="theme-color" content="#f4f1e9" />
+    <meta property="og:title" content="Vedant Kini — Aerospace, Controls & Autonomy" />
+    <meta
+      property="og:description"
+      content="Research in spacecraft guidance and control, safety-critical autonomy, and robotics."
+    />
+    <meta property="og:type" content="website" />
+    <title>Vedant Kini — Aerospace, Controls & Autonomy</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Vedant Kini, home">
+        <span class="wordmark-dot" aria-hidden="true"></span>
+        Vedant Kini
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <a class="header-contact" href="mailto:vedantkini18@gmail.com">Email me ↗</a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#about">About</a>
+        <a href="mailto:vedantkini18@gmail.com">Email</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="overline">Aerospace engineering · Guidance, control & autonomy</p>
+          <h1>
+            I build autonomous systems that remain
+            <em>reliable at the edge.</em>
+          </h1>
+          <p class="hero-summary">
+            I’m <strong>Vedant Kini</strong>, an Integrated M.Tech. student at IIT Kharagpur.
+            My research spans spacecraft guidance and control, safety-critical autonomy,
+            astrodynamics, and robotics.
+          </p>
+          <div class="hero-links" aria-label="Contact and profiles">
+            <a class="primary-link" href="#research">View selected research ↓</a>
+            <a href="mailto:vedantkini18@gmail.com">Email</a>
+            <a href="https://github.com/vedantkini21" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a
+              href="https://www.linkedin.com/in/vedant-kini-05a518252/"
+              target="_blank"
+              rel="noreferrer"
+            >LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-graphic reveal" aria-label="Abstract Earth-Moon trajectory diagram">
+          <svg viewBox="0 0 620 620" role="img">
+            <title>Earth-Moon transfer and halo orbit diagram</title>
+            <defs>
+              <radialGradient id="earth" cx="35%" cy="30%">
+                <stop offset="0%" stop-color="#d9f5ea" />
+                <stop offset="35%" stop-color="#2d8e7b" />
+                <stop offset="100%" stop-color="#123a38" />
+              </radialGradient>
+            </defs>
+            <circle class="technical-ring ring-a" cx="310" cy="310" r="230" />
+            <circle class="technical-ring ring-b" cx="310" cy="310" r="165" />
+            <path class="axis" d="M55 310h510M310 55v510" />
+            <ellipse class="orbit-line" cx="310" cy="310" rx="255" ry="112" transform="rotate(-18 310 310)" />
+            <path class="transfer-line" d="M137 410C199 315 246 233 329 211c89-24 125 46 169 28" />
+            <circle class="earth" cx="310" cy="310" r="48" fill="url(#earth)" />
+            <circle class="moon" cx="497" cy="239" r="13" />
+            <circle class="craft craft-one" cx="168" cy="383" r="5" />
+            <circle class="craft craft-two" cx="449" cy="237" r="5" />
+            <text x="327" y="300">EARTH</text>
+            <text x="515" y="235">MOON</text>
+            <text x="416" y="209">L1</text>
+            <text x="78" y="540">EARTH–MOON CR3BP / CONTROL TRAJECTORY</text>
+          </svg>
+          <div class="graphic-status">
+            <span class="live-dot"></span>
+            <div>
+              <strong>Current research</strong>
+              <span>Te Pūnaha Ātea · University of Auckland</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brief-strip" aria-label="Current academic information">
+        <div>
+          <span>Current</span>
+          <strong>Research Intern, University of Auckland</strong>
+        </div>
+        <div>
+          <span>Degree</span>
+          <strong>Integrated M.Tech., Aerospace Engineering</strong>
+        </div>
+        <div>
+          <span>Focus</span>
+          <strong>Spacecraft GNC · Safe autonomy · Robotics</strong>
+        </div>
+      </section>
+
+      <section class="section research" id="research">
+        <div class="section-intro reveal">
+          <p class="section-number">01 / Research</p>
+          <div>
+            <h2>Selected research</h2>
+            <p>
+              I work from dynamics and mathematical guarantees through simulation and
+              implementation. These are the problems currently shaping my research direction.
+            </p>
+          </div>
+        </div>
+
+        <div class="research-list">
+          <article class="research-item reveal">
+            <div class="research-visual visual-space" aria-hidden="true">
+              <svg viewBox="0 0 600 400">
+                <circle cx="305" cy="204" r="48" class="body-fill" />
+                <ellipse cx="305" cy="204" rx="220" ry="82" class="thin-orbit" />
+                <ellipse cx="305" cy="204" rx="132" ry="194" class="thin-orbit orbit-tilt" />
+                <path d="M92 281c71-14 92-97 170-106 76-9 104 58 205 22" class="bright-path" />
+                <circle cx="448" cy="202" r="7" class="node" />
+                <circle cx="127" cy="268" r="5" class="node-secondary" />
+              </svg>
+              <span>EM-CR3BP · L1 HALO ORBITS</span>
+            </div>
+            <div class="research-copy">
+              <p class="research-type">Astrodynamics · Current</p>
+              <h3>Earth–Moon trajectory generation for autonomous operations</h3>
+              <p>
+                Developing a CR3BP trajectory-generation pipeline for L1 halo-orbit control
+                datasets, including Lambert transfers and velocity-correction targets under
+                Earth- and Moon-centered dynamics.
+              </p>
+              <dl class="research-meta">
+                <div><dt>Affiliation</dt><dd>University of Auckland</dd></div>
+                <div><dt>Methods</dt><dd>CR3BP, Lambert targeting, numerical simulation</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="research-item reveal">
+            <div class="research-visual visual-control" aria-hidden="true">
+              <div class="control-grid"></div>
+              <div class="safe-region"></div>
+              <div class="unsafe-region"></div>
+              <div class="uav-mark">UAV</div>
+              <svg viewBox="0 0 600 400">
+                <path d="M69 330C143 307 149 183 249 196c80 10 61 102 159 76 47-12 65-62 114-95" class="bright-path" />
+                <path d="M69 330C174 292 208 324 270 275c69-55 111-79 252-98" class="ghost-path" />
+              </svg>
+              <span>CONTROL BARRIER FUNCTION / h(x) ≥ 0</span>
+            </div>
+            <div class="research-copy">
+              <p class="research-type">Safe autonomy</p>
+              <h3>Safety-critical control for UAV-payload systems</h3>
+              <p>
+                Designed cascaded control barrier functions to enforce collision avoidance and
+                state constraints during trajectory tracking, with investigations into
+                higher-order and collision-cone CBFs.
+              </p>
+              <dl class="research-meta">
+                <div><dt>Affiliation</dt><dd>Indian Institute of Science</dd></div>
+                <div><dt>Methods</dt><dd>CBFs, nonlinear control, constrained tracking</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="research-item reveal">
+            <div class="research-visual visual-attitude" aria-hidden="true">
+              <div class="gyro gyro-a"><i></i></div>
+              <div class="gyro gyro-b"><i></i></div>
+              <div class="satellite-body"></div>
+              <span>DOUBLE-GIMBAL VSCMG / ATTITUDE DYNAMICS</span>
+            </div>
+            <div class="research-copy">
+              <p class="research-type">Spacecraft guidance & control</p>
+              <h3>Robust spacecraft attitude control with VSCMG actuators</h3>
+              <p>
+                Building attitude-control simulations with double-gimbal variable-speed control
+                moment gyroscopes, using sliding-mode and adaptive sliding-mode control for
+                stabilization, tracking, and disturbance rejection.
+              </p>
+              <dl class="research-meta">
+                <div><dt>Affiliation</dt><dd>IIT Kharagpur</dd></div>
+                <div><dt>Methods</dt><dd>VSCMG dynamics, SMC, adaptive control</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="research-item reveal">
+            <div class="research-visual visual-drone" aria-hidden="true">
+              <div class="drone-core"></div>
+              <div class="drone-arm arm-a"></div>
+              <div class="drone-arm arm-b"></div>
+              <div class="rotor rotor-a"></div>
+              <div class="rotor rotor-b failed"></div>
+              <div class="rotor rotor-c"></div>
+              <div class="rotor rotor-d"></div>
+              <span>FAULT MODE / MOTOR 02 OFFLINE</span>
+            </div>
+            <div class="research-copy">
+              <p class="research-type">Fault-tolerant flight control</p>
+              <h3>Quadcopter stabilization after single-motor failure</h3>
+              <p>
+                Developed a fault-tolerant control strategy and actuator-failure model that
+                stabilizes a quadcopter after losing one motor. The project won Inter IIT Tech
+                Meet 13.0.
+              </p>
+              <dl class="research-meta">
+                <div><dt>Collaborator</dt><dd>ideaForge · IIT Kharagpur</dd></div>
+                <div><dt>Outcome</dt><dd>National competition winner</dd></div>
+              </dl>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section publications" id="publications">
+        <div class="section-intro reveal">
+          <p class="section-number">02 / Publications</p>
+          <div>
+            <h2>Publications</h2>
+            <p>
+              Peer-reviewed and presented work. Project media, code, and additional manuscripts
+              can be added here as they become public.
+            </p>
+          </div>
+        </div>
+
+        <article class="paper reveal">
+          <div class="paper-year">2025</div>
+          <div class="paper-content">
+            <p class="paper-venue">IEEE Space 2025 · Conference paper</p>
+            <h3>
+              Long Range Rendezvous and Docking Maneuver of a Spacecraft using Cross-Feedback
+              Sliding Mode Controller
+            </h3>
+            <p class="paper-authors">
+              <strong>Vedant V. Kini</strong>, D. Surya, R. K. Sahoo, M. Sinha
+            </p>
+            <p class="paper-abstract">
+              A robust control approach for long-range spacecraft rendezvous and docking under
+              relative orbital dynamics.
+            </p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2504.01203" target="_blank" rel="noreferrer">
+                arXiv ↗
+              </a>
+            </div>
+          </div>
+          <div class="paper-diagram" aria-hidden="true">
+            <div class="target"></div>
+            <div class="approach"></div>
+            <span>RVD</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="section experience" id="experience">
+        <div class="section-intro reveal">
+          <p class="section-number">03 / Experience</p>
+          <div>
+            <h2>Research experience</h2>
+            <p>
+              Work across astrodynamics, formal safety, spacecraft control, and student-led
+              satellite engineering.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-row reveal">
+            <div class="timeline-date">May—Jul 2026</div>
+            <div class="timeline-role">
+              <h3>Research Intern</h3>
+              <p>Te Pūnaha Ātea · University of Auckland</p>
+            </div>
+            <p class="timeline-description">
+              Earth–Moon trajectory generation, halo-orbit control datasets, and Lambert
+              transfer targeting.
+            </p>
+          </article>
+          <article class="timeline-row reveal">
+            <div class="timeline-date">Jan 2025—Now</div>
+            <div class="timeline-role">
+              <h3>Undergraduate Researcher</h3>
+              <p>Space Flight Mechanics & Controls Group · IIT Kharagpur</p>
+            </div>
+            <p class="timeline-description">
+              VSCMG spacecraft attitude dynamics, robust control, and autonomous rendezvous and
+              docking.
+            </p>
+          </article>
+          <article class="timeline-row reveal">
+            <div class="timeline-date">May—Jul 2024</div>
+            <div class="timeline-role">
+              <h3>Research Intern</h3>
+              <p>Formal Control & Autonomous Systems Lab · IISc Bangalore</p>
+            </div>
+            <p class="timeline-description">
+              Safety-critical control for UAV-payload systems using cascaded control barrier
+              functions.
+            </p>
+          </article>
+          <article class="timeline-row reveal">
+            <div class="timeline-date">Mar 2023—Now</div>
+            <div class="timeline-role">
+              <h3>AOCS Lead · Undergraduate Researcher</h3>
+              <p>Student Satellite Program · IIT Kharagpur</p>
+            </div>
+            <p class="timeline-description">
+              Reaction-wheel testing, GMAT mission analysis, and leadership of a CANSAT India
+              national-finalist team.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section notes">
+        <div class="section-intro reveal">
+          <p class="section-number">04 / Notes</p>
+          <div>
+            <h2>Recent notes</h2>
+            <p>A compact research log—another common feature of strong academic websites.</p>
+          </div>
+        </div>
+        <div class="notes-grid">
+          <article class="note reveal">
+            <time datetime="2026-05">May 2026</time>
+            <p>Joined Te Pūnaha Ātea at the University of Auckland as a research intern.</p>
+          </article>
+          <article class="note reveal">
+            <time datetime="2026">2026</time>
+            <p>Received the Platinum Jubilee Fellowship from IIT Kharagpur.</p>
+          </article>
+          <article class="note reveal">
+            <time datetime="2025">2025</time>
+            <p>Presented spacecraft rendezvous and docking research at IEEE Space 2025.</p>
+          </article>
+          <article class="note reveal">
+            <time datetime="2024-12">Dec 2024</time>
+            <p>Won Inter IIT Tech Meet 13.0 with a fault-tolerant quadcopter controller.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="about-main reveal">
+          <p class="section-number">05 / About</p>
+          <h2>Rigorous theory, grounded engineering.</h2>
+          <p>
+            I am pursuing an Integrated M.Tech. in Aerospace Engineering at IIT Kharagpur, where
+            I am ranked 7th in my department, alongside a micro-specialization in Artificial
+            Intelligence and Applications.
+          </p>
+          <p>
+            I’m especially interested in systems that must make difficult decisions under tight
+            physical and safety constraints: spacecraft, aerial robots, and autonomous machines
+            operating far from ideal conditions.
+          </p>
+          <p>
+            Away from research, I mentor junior students, play competitive chess, debate, and
+            contribute to National Service Scheme initiatives.
+          </p>
+        </div>
+
+        <aside class="about-side reveal">
+          <div class="fact-group">
+            <h3>Education</h3>
+            <p><strong>IIT Kharagpur</strong><br />Integrated M.Tech., Aerospace Engineering</p>
+            <p>AI & Applications micro-specialization · GPA 9.5/10</p>
+          </div>
+          <div class="fact-group">
+            <h3>Methods & tools</h3>
+            <p>Python · C++ · MATLAB · Julia · JAX · CasADi · PyTorch</p>
+            <p>GMAT · Ansys STK · Gazebo · MoveIt · SolidWorks</p>
+          </div>
+          <div class="fact-group">
+            <h3>Recognition</h3>
+            <p>Platinum Jubilee Fellowship · Merit Cum Means Scholarship</p>
+            <p>Inter IIT Tech Meet winner · CANSAT India finalist</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="contact">
+        <div class="contact-copy reveal">
+          <p class="overline">Contact</p>
+          <h2>Interested in the same hard problems?</h2>
+          <p>
+            I’m always glad to talk about spacecraft systems, controls, autonomous robotics,
+            research collaborations, and graduate opportunities.
+          </p>
+          <a href="mailto:vedantkini18@gmail.com">vedantkini18@gmail.com ↗</a>
+        </div>
+        <div class="contact-orbit" aria-hidden="true">
+          <span></span><span></span><span></span><i></i>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Vedant Vivek Kini</p>
+      <div>
+        <a href="mailto:vedantkini18@gmail.com">Email</a>
+        <a href="https://github.com/vedantkini21" target="_blank" rel="noreferrer">GitHub</a>
+        <a
+          href="https://www.linkedin.com/in/vedant-kini-05a518252/"
+          target="_blank"
+          rel="noreferrer"
+        >LinkedIn</a>
+      </div>
+      <p>Last updated June 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
