@@ -1,26 +1,45 @@
-# Vedant Kini — Research Portfolio
+# Vedant Kini's website
 
-A responsive, dependency-free academic website for research in aerospace engineering,
-guidance and control, safe autonomy, and robotics.
+This folder is the local checkout of:
 
-## Run locally
+`https://github.com/vedantkini21/vedantkini21.github.io`
 
-Open `index.html` directly, or serve the folder from a local web server:
+GitHub Pages publishes the website at:
+
+`https://vedantkini21.github.io`
+
+## Preview locally
+
+Open `index.html` in a browser, or run:
 
 ```powershell
-python -m http.server 4173
+python -m http.server 8000
 ```
 
-Then open `http://localhost:4173`.
+Then visit `http://localhost:8000`.
 
-## Structure
+## Add project images
 
-- `index.html` — semantic site content
-- `styles.css` — responsive design system, themes, and animations
-- `script.js` — navigation and lightweight reveal effects
-- `assets/` — site favicon
+Create image files inside `assets/images/`, then replace the corresponding placeholder in
+`index.html` with:
 
-## Customize next
+```html
+<div class="project-image">
+  <img src="assets/images/your-image.jpg" alt="Describe the project image" />
+</div>
+```
 
-The site is ready for GitHub Pages, a custom domain, project media, additional publications,
-a portrait, and longer research notes.
+Recommended image width: 900–1400 pixels.
+
+## Publish changes
+
+From this folder:
+
+```powershell
+git status
+git add .
+git commit -m "Update website"
+git push
+```
+
+GitHub Pages will redeploy automatically after the push.
