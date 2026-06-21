@@ -10,13 +10,16 @@ GitHub Pages publishes the website at:
 
 ## Preview locally
 
-Open `index.html` in a browser, or run:
+The most reliable preview method is to run a local server from this folder:
 
 ```powershell
 python -m http.server 8000
 ```
 
 Then visit `http://localhost:8000`.
+
+You can also open `index.html` directly, but browser security settings can occasionally block
+local assets when a site is opened through a `file://` address.
 
 ## Add project images
 
@@ -43,3 +46,6 @@ git push
 ```
 
 GitHub Pages will redeploy automatically after the push.
+
+If the website briefly shows an error immediately after a push, wait a minute and refresh.
+GitHub Pages can take a short time to finish deploying the new commit.
