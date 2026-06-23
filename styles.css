@@ -90,8 +90,8 @@ nav a {
 
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 220px;
-  gap: 70px;
+  grid-template-columns: minmax(0, 1fr) 245px;
+  gap: 58px;
   padding-top: 75px;
   padding-bottom: 70px;
 }
@@ -147,14 +147,23 @@ h3 {
 
 .intro-side {
   align-self: start;
-  padding-left: 20px;
-  border-left: 1px solid var(--line);
   color: var(--muted);
   font-size: 14px;
 }
 
 .intro-side p {
   margin-bottom: 20px;
+}
+
+.portrait {
+  margin: 0 0 26px;
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
 }
 
 .intro-side .side-heading {
@@ -352,10 +361,13 @@ footer p {
   }
 
   .intro-side {
-    padding-top: 20px;
-    padding-left: 0;
+    max-width: 310px;
+    padding-top: 0;
     border-top: 1px solid var(--line);
-    border-left: 0;
+  }
+
+  .portrait {
+    padding-top: 28px;
   }
 
   .two-column {
